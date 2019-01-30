@@ -1,0 +1,20 @@
+    <!doctype html>
+    <html ng-app="counterApp">
+      <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+        <script src="./counter.js"></script>
+        <link rel="stylesheet" href="counter.css">
+      </head>
+      <body>
+        <h2>Counter App</h2>
+        <div ng-controller="counterController as counter">
+
+          <button ng-click="counter.decrement()">decrement</button>
+
+          <h1> {{counter.currentCount}} </h1>
+
+          <button ng-click="counter.increment()">increment</button>
+
+        </div>
+      </body>
+    </html>
