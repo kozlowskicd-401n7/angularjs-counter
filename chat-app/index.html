@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html ng-app="chatApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+    <script src="./chat-app.js"></script>
+    <!-- <link rel="stylesheet" href="chat-app.css" /> -->
+  </head>
+  <body>
+    <h2>Chat App</h2>
+    <div ng-controller="chatController as chat">
+      <form id="text-form" ng-submit="chat.handleSubmit()">
+        <input
+        name="typedInput"
+        placeholder="New Words"
+        ng-keyup="chat.handleNewWords()"
+        ng-model="chat.typedInput"
+        />
+      </form>
+      <ul>
+        <li ng-repeat="words in chat.words track by $index">
+          {{words}}
+        </li>
+      </ul>
+      <h1>Current input: {{chat.typedInput}}</h1>
+    </div>
+  </body>
+</html>
