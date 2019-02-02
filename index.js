@@ -7,11 +7,11 @@ const PORT = process.env.PORT
 app.use(express.static('./public'));
 
 app.get('/', (req, res) => {
-  res.send('./index.html');
+  res.send('/index.html');
 });
 
 app.get('/chat', (req, res) => {
-  res.send('./chat.html');
+  res.send('/chat.html');
 });
 
 app.listen(PORT, () => {
