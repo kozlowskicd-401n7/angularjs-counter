@@ -1,0 +1,19 @@
+{
+  "name": "angularjs-counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kozlowskicd/angularjs-counter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kozlowskicd/angularjs-counter/issues"
+  },
+  "homepage": "https://github.com/kozlowskicd/angularjs-counter#readme"
+}
