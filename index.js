@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/chat', (req, res) => {
-  res.send('./chat-app/index.html');
+  res.send('./chat.html');
 });
 
 app.listen(PORT, () => {
