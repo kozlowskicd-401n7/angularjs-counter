@@ -2,10 +2,10 @@
   "name": "angularjs-counter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run index.html"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kozlowskicd/angularjs-counter/issues"
   },
-  "homepage": "https://github.com/kozlowskicd/angularjs-counter#readme"
+  "homepage": "https://github.com/kozlowskicd/angularjs-counter#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
